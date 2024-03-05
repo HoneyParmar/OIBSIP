@@ -1,144 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fashionista - Your Ultimate Fashion Destination</title>
-  <style>
-    /* Reset CSS */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f8f8f8;
-      color: #333;
-      line-height: 1.6;
-    }
-
-    header {
-      background-color: #333;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-    }
-
-    nav {
-      text-align: center;
-      padding: 10px 0;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: #fff;
-      padding: 0 10px;
-    }
-
-    .hero {
-      background-image: url("fashion6.jpg");
-      background-size: cover;
-      background-position: center;
-      text-align: center;
-      color: black;
-      padding: 100px 20px;
-    }
-
-    .hero h1 {
-      font-size: 3em;
-      margin-bottom: 20px;
-    }
-
-    .hero p {
-      font-size: 1.2em;
-    }
-
-    .features {
-      display: flex;
-      justify-content: space-around;
-      margin: 50px 0;
-    }
-
-    .feature {
-      text-align: center;
-      padding: 20px;
-      flex: 1;
-      background-color: grey;
-      border-radius: 10px;
-      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    }
-
-    .feature h2 {
-      margin-bottom: 10px;
-      font-size: 1.5em;
-    }
-
-    .feature p {
-      font-size: 1.1em;
-    }
-
-    .explore-button {
-      background-color: #333;
-      color: #fff;
-      border: none;
-      padding: 10px 20px;
-      font-size: 1em;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
-
-    .explore-button:hover {
-      background-color: #555;
-    }
-
-    footer {
-      background-color: #333;
-      color: #fff;
-      text-align: center;
-      padding: 20px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5b0c647e36.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <header>
-    <h1>Fashionista</h1>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">Shop</a>
-      <a href="#">About</a>
-      <a href="#">Contact</a>
-    </nav>
-  </header>
+    <div id="header">
+        <div class=container>
+            <div class=ht>
+            
+                <h1><sp>H</sp>ONEY</h1>
+            </div>
+            <nav>
+                
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class=header-text>
+                <p>Computer Science Engineer</p>
+                <h2>Hi, I am <br><span> Honey </span> Parmar</h2>
+            </div>
 
-  <section class="hero">
-    <h1>Welcome to Fashionista</h1>
-    <p>Your Ultimate Fashion Destination</p>
-    <button class="explore-button">Explore</button>
-  </section>
-
-  <section class="features">
-    <div class="feature">
-      <h2>Trending Styles</h2>
-      <p>Discover the latest trends in fashion and stay ahead of the curve.</p>
-      
-    </div>
-    <div class="feature">
-      <h2>Exclusive Collections</h2>
-      <p>Explore our exclusive collections curated just for you.</p>
-      
-    </div>
-    <div class="feature">
-      <h2>Fast Shipping</h2>
-      <p>Get your favorite fashion items delivered to your doorstep quickly.</p>
+        </div>
 
     </div>
-  </section>
+<!------------------------about------------------------------------------------------------>
+   
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="about.jpeg" >
+                </div>
 
-  <footer>
-    <p>&copy; 2024 Fashionista. All rights reserved.</p>
-  </footer>
+                    <div class="about-col-2">
+
+                        <h1 class="sub-title">About me</h1>
+                        <p>Hello! I'm Honey Parmar, a passionate and driven Computer Science and Engineering student with a keen interest in web development. I'm currently pursuing my Bachelor's in Computer Science and Engineering at Parul University</p>
+                
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('projects')">Projects</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+
+                            <div class="tab-contents active-tab" id="skills">
+                                <ul>
+                                    <li><span>HTML</span><br></li>
+                                    <li><span>CSS</span><br></li>
+                                    <li><span>PYTHON</span><br></li>
+                                    <li><span>C++</span><br></li>
+                                    <li><span>SQL</span><br></li>
+                                    <li><span>DATA STRUCTURE</span><br></li>
+                                </ul>
+                            </div>
+
+                            <div class="tab-contents" id="projects">
+                                <ul>
+                                    <li><span>2023-Current</span><br>Online Tiffin Service System</li>
+                                    <li><span>2020-21</span><br>Hotel Management System connecting SQL with python using MySQL.connect</li>
+                                
+                                </ul>
+                            </div>
+
+                            <div class="tab-contents" id="education">
+                                <ul>
+                                    <li><span>2021- Ongoing (3rd year)<br>PARUL University, Vadodara, Gujarat</span><br>Average CPI (up to 4th sem)- 7.2</li>
+                                    <li><span>2020-2021<br>Shree M.K. Mehta English medium school,Umbergaon, Gujarat</span><br>Science (PCM)- (92.8%)</li>
+                                    <li><span>2018-2019<br>MBBI, Talasari, Maharashtra</span><br>SSC- (90.04%)</li>
+                                </ul>
+                            </div>
+
+                        
+                    </div>
+            </div>
+        </div>
+    </div>
+<!------------------------services------------------------------------------------------------>
+<div id="services">
+
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+           <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>Web Design</h2>
+                <p>Creating the front-end creative work of a web page</p>
+                <a href="#">Learn more</a>
+           </div> 
+               <div>
+                    <i class="fa-solid fa-database"></i>
+                   <h2>Data Analysis and Visualization</h2>
+                   <p>Explore and gain insights from large datasets using Python’s data analysis libraries and create informative charts and plots</p>
+                   <a href="#">Learn more</a>
+               </div> 
+                   <div>
+                        <i class="fa-solid fa-globe"></i>
+                       <h2>Web Development</h2>
+                       <p>Builing rohbust Web Application using python frameworks</p>
+                       <a href="#">Learn more</a>
+                   </div> 
+        </div>
+    </div>
+
+</div>
+
+<!------------------------portfolio------------------------------------------------------------>
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Achievements</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="work3.jpg">
+                <div class="layer">
+                    <h3>Online Tiffin Service App</h3>
+                    <p>It is a web based system to provide a convenient and efficient solution for individuals seeking wholesome and home-cooked meals delivered to their doorstep.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+             <div class="work">
+                <img src="work4.jpg">
+                <div class="layer">
+                    <h3>Certificate</h3>
+                    <p> Certificate in 'Programming Essentials in C++' provided by Cisco Networking Academy</p>
+                    <a href="certificate.pdf"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+             <div class="work">
+                <img src="work5.jpg">
+                <div class="layer">
+                    <h3>Hotel Management System</h3>
+                    <p> This system offers a user-friendly interface and robust functionality to effectively manage hotel reservations, guest information, room allocations, billing, and other essential tasks.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+
+<!------------------------contact------------------------------------------------------------>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i>parmarhoney09@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>9173098722</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100092269537529&mibextid=JRoKGi"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://x.com/HoneyParmar09?t=lDvmhvfCALuxS0gvEwNu_A&s=09"><i class="fa-brands fa-square-x-twitter"></i></a>
+                    <a href="https://www.instagram.com/_.honey95_?igsh=MTBneWNtZjRibDNocA=="><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/honey-parmar-8b7402224?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="Honey Parmar Resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="9ddd4eb9-e44d-4cb4-a080-78b2e799f10c">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+
+                </form>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>Copyright © Honey, Made with <i class="fa-solid fa-heart"></i></p>
+        
+    </div>
+</div>
+
+<script >
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+</script>
+
+<script>
+    var sidemeu= document.getElementById("sidemenu")
+    function openmenu(){
+        sidemeu.style.right= "0";
+
+    }
+    function closemenu(){
+        sidemeu.style.right= "-200px";
+        
+    }
+</script>
+
 </body>
 </html>
